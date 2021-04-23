@@ -26,7 +26,7 @@ app.use(express.static('public'))
 
 //Rutas...
 //Ruta API.
-app.use('/jsonplaceholder.typicode.com', apiRouter);
+app.use('/parcial', apiRouter);
 //Ruta 404.
 app.use('*', (req, res) =>{
   res.status(404).sendFile(__dirname + '/public/page404.html');
