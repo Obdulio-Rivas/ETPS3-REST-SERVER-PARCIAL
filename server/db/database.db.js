@@ -34,7 +34,7 @@ const initData = () => {
 }
 
 //Sincronizacion de la BD...
-sequelize.sync({force: true}).then(()=>{
+sequelize.sync({force: false}).then(()=>{
     //LLenamos las tablas catalogo.
     initData();
     console.log('Tablas correctamente sincronizadas!');
